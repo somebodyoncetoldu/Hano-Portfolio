@@ -26,27 +26,33 @@ p {
 }
 
 h1 {
-  font-size: 2.986rem;
+  font-size: 2.027rem;
+  font-size: clamp(2.027rem, 1.8352000000000002rem + 0.9590000000000001vw, 2.986rem);
 }
 
 h2 {
-  font-size: 2.488rem;
+  font-size: 1.802rem;
+  font-size: clamp(1.802rem, 1.6648rem + 0.6859999999999999vw, 2.488rem);
 }
 
 h3 {
-  font-size: 2.074rem;
+  font-size: 1.602rem;
+  font-size: clamp(1.602rem, 1.5076rem + 0.47199999999999975vw, 2.074rem);
 }
 
 h4 {
-  font-size: 1.728rem;
+  font-size: 1.424rem;
+  font-size: clamp(1.424rem, 1.3632rem + 0.30400000000000005vw, 1.728rem);
 }
 
 h5 {
-  font-size: 1.44rem;
+  font-size: 1.266rem;
+  font-size: clamp(1.266rem, 1.2312rem + 0.17399999999999993vw, 1.44rem);
 }
 
 h6 {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
+  font-size: clamp(1.125rem, 1.11rem + 0.07499999999999996vw, 1.2rem);
 }
 
 a:link {
@@ -150,7 +156,7 @@ section {
 .about {
   width: 25%;
   height: 25%;
-  padding: 20px;
+
   display: flex;
 
   flex-direction: column;
@@ -159,4 +165,10 @@ section {
   padding-bottom: 30rem;
 }
 
+@media only screen and (max-width: 75rem) {
+  .boxrow {flex-direction: row;}
+  header {padding-top: 5rem;}
+  section {padding-bottom:15rem;}
+  .about {padding-bottom: 15rem;}
+}
 /* no help needed */
